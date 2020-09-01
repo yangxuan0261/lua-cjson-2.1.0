@@ -15,6 +15,8 @@ if(NOT CMAKE_BUILD_TYPE)
         FORCE)
 endif()
 
+set(ENV{LUA_DIR} D:/lua-5.1/src) # 增加一个环境变量 LUA_DIR, 路径是 lua 源码路径
+
 find_package(Lua51 REQUIRED)
 include_directories(${LUA_INCLUDE_DIR})
 
